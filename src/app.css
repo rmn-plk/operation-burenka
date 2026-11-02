@@ -1,0 +1,78 @@
+:root {
+  font-family: 'Rubik Variable', 'Segoe UI', sans-serif;
+  color: #f6edda;
+  background: #08050f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --bg: #08050f;
+  --ink: #140c22;
+  --cream: #f6edda;
+  --cream-dim: #cabdd8;
+  --muted: #9686ad;
+  --pink: #ff5fd8;
+  --pink-soft: #ff9be8;
+  --violet: #9e6bff;
+  --mint: #82ffd3;
+  --yellow: #ffd166;
+  --red: #ff6b6b;
+  --line: rgba(255, 255, 255, 0.13);
+  --panel: rgba(17, 11, 30, 0.72);
+  --panel-strong: rgba(14, 9, 25, 0.9);
+  --display: 'Russo One', 'Arial Black', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--cream);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 3px;
+}
+
+svg {
+  flex: none;
+}
+
+::selection {
+  background: var(--pink);
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
